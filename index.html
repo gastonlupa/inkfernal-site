@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inkfernal</title>
+  <meta name="description" content="Inkfernal — Tattoos & dotwork. Booking y portafolio." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="card">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">I</div>
+        <div class="brand-text">
+          <h1>Inkfernal</h1>
+          <p class="sub">Dotwork • Blackwork • Fineline — Fairfax, VA</p>
+        </div>
+      </div>
+
+      <nav class="actions">
+        <a class="btn primary" href="#booking">Reservar / Booking</a>
+        <a class="btn" href="#portfolio">Portafolio</a>
+        <a class="btn" href="#contact">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="grid">
+      <article class="panel" id="booking">
+        <h2>Booking</h2>
+        <p>Solicita una cita con una descripción breve, tamaño, zona del cuerpo y 2–3 referencias.</p>
+        <div class="row">
+          <a class="btn primary" href="mailto:booking@inkfernal.com?subject=Booking%20Inkfernal&body=Hola%2C%20quiero%20una%20cita.%0A%0A- Idea%3A%0A- Tama%C3%B1o%3A%0A- Zona%3A%0A- Referencias%20(links)%3A%0A- Disponibilidad%3A%0A">Enviar email</a>
+          <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+        <p class="hint">Tip: cuando termines iCloud, ese correo funcionará perfecto.</p>
+      </article>
+
+      <article class="panel" id="portfolio">
+        <h2>Portafolio</h2>
+        <p>Sube tus imágenes y reemplaza estos placeholders. Formato recomendado: 1080×1350.</p>
+
+        <div class="gallery">
+          <div class="ph">Imagen 1</div>
+          <div class="ph">Imagen 2</div>
+          <div class="ph">Imagen 3</div>
+          <div class="ph">Imagen 4</div>
+          <div class="ph">Imagen 5</div>
+          <div class="ph">Imagen 6</div>
+        </div>
+
+        <p class="hint">Si quieres, te lo dejo preparado para que arrastres imágenes y listo.</p>
+      </article>
+
+      <article class="panel" id="contact">
+        <h2>Contacto</h2>
+        <p>Respondo más rápido por email. Para consultas generales:</p>
+        <div class="row">
+          <a class="btn" href="mailto:info@inkfernal.com?subject=Consulta%20Inkfernal">info@inkfernal.com</a>
+          <a class="btn" href="mailto:gaston@inkfernal.com?subject=Mensaje%20Inkfernal">gaston@inkfernal.com</a>
+        </div>
+
+        <hr class="sep" />
+
+        <p class="small">
+          © <span id="y"></span> Inkfernal. Todos los derechos reservados.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
